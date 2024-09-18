@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragment.SettingFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/img_hitory_bg"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/img_2"></ImageView>
+
+        <Switch
+            android:id="@+id/darkmode"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Light/Dark"
+            android:textSize="35.5dp"
+            tools:layout_editor_absoluteX="0dp">
+
+        </Switch>
+
+        <Button
+            android:id="@+id/btnFont2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="Size"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:iconTint="@color/black" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

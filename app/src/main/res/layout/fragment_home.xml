@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/img_3"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="casual"
+                android:textColor="@color/white"
+                android:text="Thử Thách"
+                android:textAlignment="center"
+                android:textSize="20dp"></TextView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CVThanTren"
+                android:layout_width="363dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="15dp"
+                app:cardCornerRadius="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/toanthan">
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/btnLike"-->
+<!--                        android:layout_width="43dp"-->
+<!--                        android:layout_height="45dp"-->
+<!--                        app:srcCompat="@drawable/baseline_favorite_24"-->
+<!--                        tools:ignore="MissingConstraints"-->
+<!--                        tools:layout_editor_absoluteX="304dp"-->
+<!--                        tools:layout_editor_absoluteY="109dp" />-->
+
+                    <TextView
+                        android:id="@+id/textViewA1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="34dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="cursive"
+                        android:text="Toàn Thân"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                    <TextView
+                        android:id="@+id/textViewA2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="34dp"
+                        android:fontFamily="casual"
+                        android:text="Thử thách "
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewA1"></TextView>
+
+                    <TextView
+                        android:id="@+id/textViewA3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="34dp"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="casual"
+                        android:text="30 ngày"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewA2"></TextView>
+
+                    <TextView
+                        android:id="@+id/textViewA4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="17dp"
+                        android:fontFamily="casual"
+                        android:text="10 lần tập | 15 phút"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewA3"
+                        tools:ignore="TextSizeCheck"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CVThanDuoi"
+                android:layout_width="363dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="20dp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="361dp"
+                    android:layout_height="158dp"
+                    android:background="@drawable/thanduoi">
+
+                    <TextView
+                        android:id="@+id/textViewB1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="34dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="casual"
+                        android:text="Thân Dưới"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                    <TextView
+                        android:id="@+id/textViewB2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="34dp"
+                        android:fontFamily="casual"
+                        android:text="Thử thách"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewB1"></TextView>
+
+                    <TextView
+                        android:id="@+id/textViewB3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="34dp"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="casual"
+                        android:text="30 ngày"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewB2"></TextView>
+
+                    <TextView
+                        android:id="@+id/textViewB4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="17dp"
+                        android:fontFamily="casual"
+                        android:text="10 lần tập | 15 phút"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewB3"
+                        tools:ignore="TextSizeCheck"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:fontFamily="casual"
+                android:text="Các Nhóm Cơ"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                style="@style/Text"
+                android:layout_marginLeft="15dp"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"></TextView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="363dp"
+                android:layout_height="160dp"
+                android:id="@+id/CVCoBung"
+                android:backgroundTint="@color/purple_200"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="15dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cobung">
+
+                    <TextView
+                        android:id="@+id/textViewC1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="34dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="casual"
+                        android:text="Cơ Bụng"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                    <TextView
+                        android:id="@+id/textViewC2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="34dp"
+                        android:fontFamily="casual"
+                        android:text="Every day"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewC1"></TextView>
+
+
+                    <TextView
+                        android:id="@+id/textViewC3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="17dp"
+                        android:fontFamily="casual"
+                        android:text="10 Steps | 10-15 min"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewC2"
+                        tools:ignore="TextSizeCheck"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="363dp"
+                android:layout_height="160dp"
+                android:id="@+id/CVCoNguc"
+                android:backgroundTint="@color/purple_500"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/conguc">
+
+                    <TextView
+                        android:id="@+id/textViewD1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="34dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="casual"
+                        android:text="Cơ Ngực"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                    <TextView
+                        android:id="@+id/textViewD2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="34dp"
+                        android:fontFamily="casual"
+                        android:text="Every day"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewD1"></TextView>
+
+
+
+                    <TextView
+                        android:id="@+id/textViewD3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="17dp"
+                        android:fontFamily="casual"
+                        android:text="10 Steps | 10-15 min"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewD2"
+                        tools:ignore="TextSizeCheck"></TextView>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="363dp"
+                android:layout_height="160dp"
+                android:backgroundTint="#2EB5C6"
+                android:id="@+id/CVCanhTay"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/canhtay">
+
+                    <TextView
+                        android:id="@+id/textViewE1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="34dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="casual"
+                        android:text="Cánh Tay"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                    <TextView
+                        android:id="@+id/textViewE2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="34dp"
+                        android:fontFamily="casual"
+                        android:text="Every day"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewE1"></TextView>
+
+                    <TextView
+                        android:id="@+id/textViewE3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="17dp"
+                        android:fontFamily="casual"
+                        android:text="10 Steps | 10-15 min"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewE2"
+                        tools:ignore="TextSizeCheck"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="363dp"
+                android:layout_height="160dp"
+                android:backgroundTint="#DA9A3C"
+                android:id="@+id/CVCoChan"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cochan">
+
+                    <TextView
+                        android:id="@+id/textViewF1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="34dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="casual"
+                        android:text="Chân"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                    <TextView
+                        android:id="@+id/textViewF2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="34dp"
+                        android:fontFamily="casual"
+                        android:text="Every day"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewF1"></TextView>
+
+                    <TextView
+                        android:id="@+id/textViewF3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="17dp"
+                        android:fontFamily="casual"
+                        android:text="10 Steps | 10-15 min"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewF2"
+                        tools:ignore="TextSizeCheck"></TextView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

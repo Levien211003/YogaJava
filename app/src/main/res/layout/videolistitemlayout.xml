@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/item_video_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="237dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="cursive"
+                android:text="Name"
+                android:textSize="25dp"></TextView>
+
+
+            <TextView
+                android:id="@+id/videoID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></TextView>
+
+            <TextView
+                android:id="@+id/tvDe2"
+                style="@style/Text"
+                android:layout_width="83dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="cursive"
+                android:text="decript 2"></TextView>
+
+            <ImageView
+                android:id="@+id/favoriteIV"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_margin="15dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/baseline_favorite_border_24"></ImageView>
+
+            <TextView
+
+                style="@style/Text"
+                android:layout_width="83dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="cursive"
+                android:text="Like this plan?"></TextView>
+
+
+        </LinearLayout>
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:cardCornerRadius="20dp"-->
+        <!--            android:layout_gravity="right">-->
+        <!--            -->
+        <!--        </androidx.cardview.widget.CardView>
+-->
+        <ImageView
+            android:id="@+id/imgItemView"
+            android:layout_width="171dp"
+            android:layout_height="169dp"
+            android:layout_gravity="center_vertical"></ImageView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

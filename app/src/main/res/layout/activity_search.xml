@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FindFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_history_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_find"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/img_2">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_hitory_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_find"
+                style="@style/Text"
+                android:text="Tìm Kiếm Bài Tập Bạn Cần"
+
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true">
+            </TextView>
+
+            <EditText
+                android:id="@+id/edSearch"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hitory_text"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/custom_edit_text"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:hint="Nhập Tên Bài Tập"
+                android:fontFamily="sans-serif-light"
+                android:textSize="15sp"
+                android:drawableLeft="@drawable/baseline_search_24"
+                android:drawablePadding="10dp">
+            </EditText>
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/edSearch"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Tìm Kiếm"
+                android:textSize="10sp"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null">
+            </Button>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnSearch"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="9dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
+

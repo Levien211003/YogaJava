@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1016866880882",
+    "firebase_url": "https://fir-fordoan-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fir-fordoan",
+    "storage_bucket": "fir-fordoan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016866880882:android:5146ed6b6dfbffffe631eb",
+        "android_client_info": {
+          "package_name": "com.example.doan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016866880882-fr174fuvohhm5p2dkbjnme9r1lo340o6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByuMI7qrjrlEHqt5jvCIkzIyHIS2xmkV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016866880882-fr174fuvohhm5p2dkbjnme9r1lo340o6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
